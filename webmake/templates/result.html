@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Result</title>
+
+	<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+      <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet"> 
+    <!-- Bootstrap theme -->
+    <link href="{{ url_for('static', filename='css/bootstrap-theme.min.css') }}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename='css/theme.css') }}" rel="stylesheet">
+    <style type="text/css">
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  height: 25%;
+}
+.bcenter{
+  margin-left: auto;
+  margin-right: auto;
+
+}
+    .container theme-showcase{
+  background-image: url("static/bg2.jpg");
+  background-size: cover;
+    height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.container {
+  background-image: url("static/bg2.jpg");
+  background-size: cover;
+    height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+html,body{
+
+    background-image: url("static/bg2.jpg");
+}
+
+    </style>
+</head>
+<body>
+      <div class="container">
+     <div class="row">
+      <div class="column">
+     <img src="static/images/{{filename}}"  class="center" alt="Image"/>
+     </div>
+      </br>
+      </br>
+      <form method=POST class="form-signin" action="/webpage">
+      <input class="btn btn-lg btn-primary btn-block" type=submit value=Generate >  
+      </form>
+       </br>
+       </br>
+     <div class="column">
+     <img src="static/images/image{{roi}}.png"  class="center" alt="Image"/>
+     </div>
+     </div>
+    
+
+<div class="container">
+</body>
+</html>
